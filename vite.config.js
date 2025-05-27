@@ -3,7 +3,7 @@ import { resolve } from 'path';
 import { VitePWA } from 'vite-plugin-pwa';
 
 export default defineConfig({
-  base: '/stroy-app/',
+  base: '/story-app/',
   root: resolve(__dirname, 'src'),
   publicDir: resolve(__dirname, 'src', 'public'),
   build: {
@@ -18,14 +18,14 @@ export default defineConfig({
 
   plugins: [
     VitePWA({
-      base: '/stroy-app/',
+      base: '/story-app/',
       injectRegister: 'auto',
       registerType: 'autoUpdate',
       manifest: {
         name: 'Story App',
         short_name: 'Story App',
         description: 'A simple application to share stories.',
-        start_url: '/stroy-app/',
+        start_url: '/story-app/',
         display: 'standalone',
         background_color: '#ffffff',
         theme_color: '#42b883',
